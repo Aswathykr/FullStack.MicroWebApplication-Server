@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class Video {
@@ -35,7 +36,12 @@ public class Video {
         this.title = title;
         this.path = path;
         this.id = id;
-        this.format = "video/mp4";
+        this.format = "mp4";
+    }
+    public Video(String title, String description, String format){
+        this.title = title;
+        this.description = description;
+        this.format = format;
     }
     public Video(String title){
         this.title = title;
@@ -103,6 +109,27 @@ public class Video {
 
     public String getDescription() {
         return description;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Video)) return false;
+        Video video = (Video) o;
+        return Objects.equals(id, video.id) &&
+                Objects.equals(title, video.title) &&
+                Objects.equals(description, video.description) &&
+                Objects.equals(format, video.format) &&
+                Objects.equals(path, video.path) &&
+                Objects.equals(uniqueName, video.uniqueName) &&
+                Objects.equals(user, video.user) &&
+                Objects.equals(comments, video.comments);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, description, format, path, uniqueName, user, comments);
     }
 
     public String getThumbnailPath() {

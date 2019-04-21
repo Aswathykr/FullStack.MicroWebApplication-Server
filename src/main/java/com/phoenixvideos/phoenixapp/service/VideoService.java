@@ -84,5 +84,14 @@ public class VideoService {
         videoRepository.deleteById(id);
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "********************************************\nVideoService{" +
+                "videoRepository=" + videoRepository +
+                ", userRepository=" + userRepository +
+                ", amazonS3ClientService=" + amazonS3ClientService +
+                '}' + "********************************************\n";
+    }
 }
 

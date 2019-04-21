@@ -66,7 +66,6 @@ public class CommentService {
         Comment originalComment = commentRepository.findById(id).get();
         originalComment.setUser(originalComment.getUser());
         originalComment.setComment(comment.getComment());
-
         return commentRepository.save(originalComment);
     }
 

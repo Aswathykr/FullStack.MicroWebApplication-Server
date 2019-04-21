@@ -22,16 +22,16 @@ public class VideoController {
         this.amazonS3ClientService = amazonS3ClientService;
     }
 
-    @PostMapping("/videos/{user_id}")//pass the id of the user uploading
+    @PostMapping(value="/videos/{user_id}", consumes = "multipart/form-data")//pass the id of the user uploading
     public ResponseEntity<Video> createVideo(@RequestPart(value = "file") MultipartFile videoFile,
                                              @PathVariable Long user_id,
                                              @RequestPart(value = "title") String videoTitle,
-                                             @RequestPart(value = "description") String videoDescription,
+                                             @RequestPart(value = "desc") String videoDescription,
                                              @RequestPart(value = "format") String videoFormat) {
 
         Video createdVideo = videoService.create(videoFile, user_id, videoTitle, videoDescription, videoFormat);
 
-        return new ResponseEntity<>(createdVideo, HttpStatus.CREATED);
+        return new ResponseEntity<>(createdVideo, createdVideo== null ? HttpStatus.BAD_REQUEST : HttpStatus.CREATED);
     }
 
 

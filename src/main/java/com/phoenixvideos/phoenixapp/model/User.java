@@ -27,6 +27,17 @@ public class User {
     @OneToMany(mappedBy = "user")
     private Set<Video> videos;
 
+    public User(String firstName, String lastName, String email, String userName, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.userName = userName;
+        this.password = password;
+    }
+
+    public User() {
+
+    }
     public Long getId() {
         return id;
     }

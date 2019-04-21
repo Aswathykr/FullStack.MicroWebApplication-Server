@@ -1,6 +1,7 @@
 package com.phoenixvideos.phoenixapp.service;
 
 import com.phoenixvideos.phoenixapp.PhoenixappApplicationTests;
+import com.phoenixvideos.phoenixapp.model.User;
 import com.phoenixvideos.phoenixapp.model.Video;
 import com.phoenixvideos.phoenixapp.repository.UserRepository;
 import com.phoenixvideos.phoenixapp.repository.VideoRepository;
@@ -10,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -107,4 +109,33 @@ public class VideoServiceTest {
         Video video = service.getVideo(2L);
         Assert.assertEquals(video, null);
     }
+
+    @Test
+    public void createVideoTest() throws Exception {
+        String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
+        Video videoInput = new Video("BigBuckBunny", "someDescription", "mp4");
+        Video videoOutput = new Video("BigBuckBunny", testPath, 2L);
+
+        User user = new User("user", "last", "first@gmail.com", "first", "secret");
+
+        videoOutput.setUser(user);
+
+        BDDMockito.given(userRepository.findById(1L))
+                .willReturn(Optional.of(user));
+
+        BDDMockito.given(videoRepository.save(videoInput))
+                .willReturn(videoOutput);
+
+        MockMultipartFile mockFile = new MockMultipartFile("file", "BigBuckBunny.mp4", "application/undefined", "".getBytes());
+
+        BDDMockito.given(amazonS3ClientService.gertUrl())
+                .willReturn("https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4");
+
+        Video returnedVideo = service.create(mockFile, 1L, "BigBuckBunny", "someDescription", "mp4");
+        System.out.println(returnedVideo.toString());
+        //Assert.assertEquals(returnedVideo.getId(), videoOutput.getId());
+        Assert.assertEquals(returnedVideo.getPath(), videoOutput.getPath());
+
+    }
+
 }
