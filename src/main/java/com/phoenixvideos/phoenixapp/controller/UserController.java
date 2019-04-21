@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
@@ -41,6 +42,11 @@ public class UserController {
     public ResponseEntity<User> getUser(@PathVariable Long id) {
         return new ResponseEntity<>(userService.show(id),HttpStatus.OK);
     }
+    @GetMapping("/users/all")
+    public ResponseEntity<Iterable<User>> getUsers() {
+        return new ResponseEntity<>(userService.index(),HttpStatus.OK);
+    }
+
 
     @PutMapping("/users/{id}")
     public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User user) {
