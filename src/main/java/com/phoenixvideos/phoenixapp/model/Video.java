@@ -32,11 +32,11 @@ public class Video {
 
     }
 
-    public Video(String title, String path, long id){
+    public Video(String title, String path, long id, String format){
         this.title = title;
         this.path = path;
         this.id = id;
-        this.format = "mp4";
+        this.format = format;
     }
     public Video(String title, String description, String format){
         this.title = title;

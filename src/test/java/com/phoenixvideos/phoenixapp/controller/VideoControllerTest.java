@@ -37,8 +37,8 @@ public class VideoControllerTest {
         String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
         String testPath2 = "https://s3.us-east-2.amazonaws.com/phoenix.videos/IMG_4786.mp4";
         ArrayList<Video> videos = new ArrayList<>();
-        videos.add(new Video("BigBuckBunny", testPath, 2L));
-        videos.add(new Video("Zipcode window", testPath2,3L));
+        videos.add(new Video("BigBuckBunny", testPath, 2L, "mp4"));
+        videos.add(new Video("Zipcode window", testPath2,3L, "mp4"));
 
         BDDMockito
                 .given(mockService.index())
@@ -91,7 +91,7 @@ public class VideoControllerTest {
     public void getVideoTest() throws Exception {
 
         String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
-        Video video = new Video("BigBuckBunny", testPath, 2L);
+        Video video = new Video("BigBuckBunny", testPath, 2L, "mp4");
 
         BDDMockito
                 .given(mockService.getVideo(2L))
@@ -130,7 +130,7 @@ public class VideoControllerTest {
     @Test
     public void createVideoTest() throws Exception {
         String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
-        Video video = new Video("BigBuckBunny", testPath, 2L);
+        Video video = new Video("BigBuckBunny", testPath, 2L, "mp4");
         MockMultipartFile mockFile = new MockMultipartFile("file", "", "application/undefined", "".getBytes());
         MockMultipartFile part1 = new MockMultipartFile("title", "", "application/text",
                 "title".getBytes(Charset.forName("UTF-8")));
@@ -166,7 +166,7 @@ public class VideoControllerTest {
     @Test
     public void createVideoNegativeTest() throws Exception {
         String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
-        Video video = new Video("BigBuckBunny", testPath, 2L);
+        Video video = new Video("BigBuckBunny", testPath, 2L, "mp4");
         MockMultipartFile mockFile = new MockMultipartFile("file", "", "application/undefined", "".getBytes());
         MockMultipartFile part1 = new MockMultipartFile("title", "", "application/text",
                 "title".getBytes(Charset.forName("UTF-8")));

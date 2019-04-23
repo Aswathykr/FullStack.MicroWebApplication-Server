@@ -45,8 +45,8 @@ public class VideoServiceTest {
         String testPath2 = "https://s3.us-east-2.amazonaws.com/phoenix.videos/IMG_4786.mp4";
         ArrayList<Video> videos = new ArrayList<>();
 
-        videos.add(new Video("BigBuckBunny", testPath, 2L));
-        videos.add(new Video("Zipcode window", testPath2,3L));
+        videos.add(new Video("BigBuckBunny", testPath, 2L, "mp4"));
+        videos.add(new Video("Zipcode window", testPath2,3L, "mp4"));
 
         BDDMockito
                 .given(videoRepository.findAll())
@@ -84,7 +84,7 @@ public class VideoServiceTest {
     @Test
     public void getVideoTest() throws Exception {
         String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
-        Video video = new Video("BigBuckBunny", testPath, 2L);
+        Video video = new Video("BigBuckBunny", testPath, 2L, "mp4");
 
         BDDMockito
                 .given(videoRepository.findById(2L))
@@ -99,8 +99,8 @@ public class VideoServiceTest {
         String testPath2 = "https://s3.us-east-2.amazonaws.com/phoenix.videos/IMG_4786.mp4";
         ArrayList<Video> videos = new ArrayList<>();
 
-        videos.add(new Video("BigBuckBunny", testPath, 2L));
-        videos.add(new Video("Zipcode window", testPath2,3L));
+        videos.add(new Video("BigBuckBunny", testPath, 2L, "mp4"));
+        videos.add(new Video("Zipcode window", testPath2,3L, "mp4"));
 
         BDDMockito
                 .given(videoRepository.findById(2L))
@@ -114,7 +114,7 @@ public class VideoServiceTest {
     public void createVideoTest() throws Exception {
         String testPath = "https://s3.us-east-2.amazonaws.com/phoenix.videos/BigBuckBunny.mp4";
         Video videoInput = new Video("BigBuckBunny", "someDescription", "mp4");
-        Video videoOutput = new Video("BigBuckBunny", testPath, 2L);
+        Video videoOutput = new Video("BigBuckBunny", testPath, 2L, "mp4");
 
         User user = new User("user", "last", "first@gmail.com", "first", "secret");
 

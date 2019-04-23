@@ -60,29 +60,3 @@ public class UserController {
         userService.delete(id);
     }
 }
-
-
-//    @PutMapping("/users/video/upload/{userId}/{videoId}")
-//    public ResponseEntity<String> uploadVideo(@PathVariable Long userId, @PathVariable int videoId,
-//                                              @RequestBody File video) {
-//        return new ResponseEntity<>("A response message is returned", HttpStatus.CREATED);
-//    }
-
-//    @PostMapping("/users/video/comment/{userId}")
-//    public ResponseEntity<Comment> createComments(@PathVariable Long userId, @RequestBody Comment comment) {
-//        User user = userService.show(userId);
-//        comment.setUser(user);
-//        return new ResponseEntity<>(commentService.create(comment),HttpStatus.OK);
-//    }
-
-//    @PutMapping(“/user/comment/{id}“)
-//    ResponseEntity<User> putComment(@PathVariable Long id,
-//                                         @RequestBody Comment comment){
-//        User user  = userService.show(id);
-//        user.setComment(comment);
-//        return new ResponseEntity<User>( HttpStatus.OK);
-//
-//    }
-//    @PostMapping("/users/video/{id}")
-//    public ResponseEntity<Video> createVideo(@PathVariable int id, @RequestBody Video video) {
-//        return new ResponseEntity<>(HttpStatus.CREATED);

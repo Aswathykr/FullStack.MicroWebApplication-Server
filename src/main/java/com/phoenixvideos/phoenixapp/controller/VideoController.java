@@ -51,7 +51,6 @@ public class VideoController {
     }
 
     @DeleteMapping("/videos/{id}")
-    //@ResponseStatus(value = HttpStatus.NO_CONTENT)
     public ResponseEntity<Boolean> deleteVideo(@PathVariable Long id) {
         Video video = videoService.getVideo(id);
         amazonS3ClientService.deleteFileFromS3Bucket(video.getUniqueName());
