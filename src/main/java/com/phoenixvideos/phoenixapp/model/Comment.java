@@ -18,6 +18,10 @@ public class Comment {
     @JoinColumn
     private Video video;
 
+    public Comment(String comment) {
+        this.comment = comment;
+    }
+
     public Long getId() {
         return id;
     }

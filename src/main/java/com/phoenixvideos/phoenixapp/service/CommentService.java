@@ -30,8 +30,6 @@ public class CommentService {
 
     public Comment create(Long user_id, Long video_id, Comment comment) {
 
-        Video videoResult = null;
-        User userResult = null;
         Comment commentResult = null;
         User user = userRepository.findById(user_id).orElseGet(null);
         Video video = videoRepository.findById(video_id).orElseGet(null);
