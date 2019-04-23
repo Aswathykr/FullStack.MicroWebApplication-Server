@@ -192,39 +192,6 @@ public class UserServiceTest {
 //         with id 14.
         Assert.assertEquals(expectedId, actualId);
     }
-    @Test
-    public void testUpdate(){
-        //Given
-        User user = new User();
-        long id = 1L;
-        User userCreated = new User();
-        userCreated.setId(id);
-        userCreated.setUserName("Marlys");
-        String expected = "Alvarado";
-//        Mockito.doReturn(userCreated).when(repository).save(user);
-//        Mockito.doReturn(Optional.of(userCreated)).when(repository).findById(id);
-//        Mockito.doReturn(userCreated).when(serviceSpy).update(id,userCreated);
-//        User user2 = serviceSpy.update(id,user);
-        // 1. create mock
-//        UserRepository mockRepo = mock(UserRepository.class);
-        when(repository.save(user)).thenReturn(user);
 
-//        service = new UserService(repository);
-//       service.create(user);
-//        System.out.println(service.create(user));
-//        when(repository.findById(id).get()).thenReturn(userCreated);
-//
-////        User updated = mockRepo.findById(id).get();
-          User Updated =  service.update(id,userCreated);
-//        userCreated.setLastName(expected);
-        System.out.println(Updated.getId());
-        // 3. call the method under test
-
-
-        // 6. verify the result
-        // Make sure the method save got call with the person
-//        verify(mockRepo).save(user);
-//        Assert.assertEquals(user1.getLastName(),expected);
-    }
 }
 
