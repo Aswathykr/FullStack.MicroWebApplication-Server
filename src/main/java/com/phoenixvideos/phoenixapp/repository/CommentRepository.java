@@ -9,5 +9,4 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CommentRepository extends CrudRepository<Comment, Long> {
-    Optional<List<Comment>> findCommentsByVideo(@Param("video_id") Video video);
 }

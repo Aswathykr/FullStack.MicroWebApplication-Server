@@ -36,7 +36,6 @@ public class Video {
         this.title = title;
         this.path = path;
         this.id = id;
-        this.format = "mp4";
     }
     public Video(String title, String description, String format){
         this.title = title;
