@@ -129,40 +129,7 @@ public class UserServiceTest {
 
 
     }
-//
-//    @Before
-//    public void SetUp() {
-//    service = new UserService(repository);
 
-
-//
-//    @Test
-//    public void testCreate1(){
-//        User user = new User();
-//        user.setUserName("Marlys");
-//
-//        when(repository.save(any(User.class))).thenReturn(new User());
-//
-//        User created = service.create(user);
-//
-//        Assert.assertEquals(user.getFirstName(),created.getFirstName());
-//
-//    }
-//    @MockBean
-//    private UserController controller;
-//    @MockBean
-//    private AmazonS3ClientService amazonS3ClientService;
-//    @MockBean
-//    private VideoService videoService;
-//    @MockBean
-//    private VideoRepository videoRepository;
-
-//    @Before
-//    public void setup() {
-//        this.service = new UserService(repository);
-//        this.controller = new UserController(service);
-//        this.videoService = new VideoService(videoRepository, repository, amazonS3ClientService);
-//    }
 
     //When the method you are testing return something
     @Test
