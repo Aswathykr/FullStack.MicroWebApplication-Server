@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4809048a-b70f-4442-b609-79b927861cdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/models/CommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/models/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/models/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/phoenixvideos/phoenixapp/Controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phoenixvideos/phoenixapp/Controller/CommentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/phoenixvideos/phoenixapp/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phoenixvideos/phoenixapp/service/CommentService.class" afterDir="false" />
     </list>
@@ -16,43 +13,111 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/phoenixapp$PhoenixappApplicationTests.ic" NAME="PhoenixappApplicationTests Coverage Results" MODIFIED="1556130942492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.phoenixvideos.phoenixapp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/phoenixapp$com_phoenixvideos_phoenixapp_in_phoenixapp.ic" NAME="com.phoenixvideos.phoenixapp in phoenixapp Coverage Results" MODIFIED="1556131149941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.phoenixvideos.phoenixapp.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="165" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/model/Comment.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/models/CommentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="206">
+              <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2048#2049#0" expanded="true" />
+                <element signature="e#2084#2085#0" expanded="true" />
+                <element signature="e#2794#2795#0" expanded="true" />
+                <element signature="e#2899#2900#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/model/User.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="240">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/models/UserTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-development.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/PhoenixappApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/service/VideoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/controller/CommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/controller/UserControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/phoenixvideos/phoenixapp/service/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="161" selection-start-line="161" selection-end-line="161" />
             </state>
           </provider>
         </entry>
@@ -85,10 +150,36 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="715" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phoenixapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phoenixapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phoenixapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phoenixapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="spring-boot" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,25 +218,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenixvideos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenixvideos" type="462c0819:PsiDirectoryNode" />
               <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -154,8 +226,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenixvideos" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -163,6 +242,31 @@
               <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,25 +282,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenixvideos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenixvideos" type="462c0819:PsiDirectoryNode" />
               <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -205,10 +290,31 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="phoenixvideos" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixapp" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoenixapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,9 +340,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556128775076" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556131582461" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -252,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in phoenixapp">
+  <component name="RunManager" selected="JUnit.com.phoenixvideos.phoenixapp in phoenixapp">
     <configuration name="All in phoenixapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phoenixapp" />
       <option name="PACKAGE_NAME" value="" />
@@ -277,34 +387,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentTest.getUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PhoenixappApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phoenixapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.phoenixvideos.phoenixapp.models.*" />
+          <option name="PATTERN" value="com.phoenixvideos.phoenixapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.phoenixvideos.phoenixapp.models" />
-      <option name="MAIN_CLASS_NAME" value="com.phoenixvideos.phoenixapp.models.CommentTest" />
-      <option name="METHOD_NAME" value="getUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.getFistNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="phoenixapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.phoenixvideos.phoenixapp.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.phoenixvideos.phoenixapp.models" />
-      <option name="MAIN_CLASS_NAME" value="com.phoenixvideos.phoenixapp.models.UserTest" />
-      <option name="METHOD_NAME" value="getFistNameTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.phoenixvideos.phoenixapp" />
+      <option name="MAIN_CLASS_NAME" value="com.phoenixvideos.phoenixapp.PhoenixappApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -325,6 +418,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.phoenixvideos.phoenixapp in phoenixapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phoenixapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phoenixvideos.phoenixapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.phoenixvideos.phoenixapp" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PhoenixappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="phoenixapp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.phoenixvideos.phoenixapp.PhoenixappApplication" />
@@ -334,11 +441,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.phoenixvideos.phoenixapp in phoenixapp" />
+        <item itemvalue="JUnit.PhoenixappApplicationTests" />
         <item itemvalue="JUnit.All in phoenixapp" />
         <item itemvalue="JUnit.UserTest.getUserPasswordTest" />
         <item itemvalue="JUnit.CommentTest.getCommentTest" />
-        <item itemvalue="JUnit.CommentTest.getUserTest" />
-        <item itemvalue="JUnit.UserTest.getFistNameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -365,15 +472,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_phoenixapp - 2019.04.24 at 13h 01m 47s.xml">
-      <configuration name="All in phoenixapp" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_getIdTest - 2019.04.24 at 13h 06m 02s.xml">
-      <configuration name="UserTest.getIdTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_getFistNameTest - 2019.04.24 at 13h 07m 13s.xml">
-      <configuration name="UserTest.getFistNameTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_getFistNameTest - 2019.04.24 at 13h 08m 13s.xml">
       <configuration name="UserTest.getFistNameTest" configurationId="JUnit" />
     </history-entry>
@@ -395,14 +493,24 @@
     <history-entry file="All_in_phoenixapp - 2019.04.24 at 13h 59m 24s.xml">
       <configuration name="All in phoenixapp" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PhoenixappApplicationTests - 2019.04.24 at 14h 35m 59s.xml">
+      <configuration name="PhoenixappApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_phoenixvideos_phoenixapp_in_phoenixapp - 2019.04.24 at 14h 38m 05s.xml">
+      <configuration name="com.phoenixvideos.phoenixapp in phoenixapp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_phoenixvideos_phoenixapp_in_phoenixapp - 2019.04.24 at 14h 39m 39s.xml">
+      <configuration name="com.phoenixvideos.phoenixapp in phoenixapp" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2847000" />
+    <option name="totallyTimeSpent" value="3499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="715" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16453674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -410,10 +518,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32905295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32905295" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2009901" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,11 +531,13 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32901135" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32905295" />
+      <window_info active="true" anchor="right" id="Coverage" sideWeight="0.5006196" side_tool="true" visible="true" weight="0.2172524" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.4993804" weight="0.2172524" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -439,6 +548,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -485,8 +598,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixvideos/phoenixapp/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="206">
+          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+          <folding>
+            <element signature="e#2048#2049#0" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
