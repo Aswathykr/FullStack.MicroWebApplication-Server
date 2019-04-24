@@ -1,6 +1,7 @@
 package com.phoenixvideos.phoenixapp.model;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Comment {
@@ -21,6 +22,13 @@ public class Comment {
     public Comment(String comment) {
         this.comment = comment;
     }
+    public Comment(String comment, Long id) {
+        this.comment = comment;
+        this.id = id;
+    }
+    public Comment() {
+    }
+
 
     public Long getId() {
         return id;
@@ -54,6 +62,19 @@ public class Comment {
         this.comment = comment;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Comment)) return false;
+        Comment comment1 = (Comment) o;
+        return Objects.equals(id, comment1.id) &&
+                Objects.equals(comment, comment1.comment) &&
+                Objects.equals(user, comment1.user) &&
+                Objects.equals(video, comment1.video);
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, comment, user, video);
+    }
 }
